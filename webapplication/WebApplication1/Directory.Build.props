@@ -1,0 +1,10 @@
+<Project>
+<PropertyGroup>
+		<!-- Restore packages using a lock file -->
+		<!-- To really use the the lock file and fail restore when hashes don't match, use the the option locked-mode as argument to dotnet.exe restore in CI/CD -->
+		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+
+		<!-- http://blog.ctaggart.com/2019/03/using-nuget-lock-file-for-reproducible.html -->
+		<DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>		
+</PropertyGroup>
+</Project>
